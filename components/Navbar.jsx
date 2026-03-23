@@ -5,6 +5,7 @@ import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
 import Link from 'next/link.js';
 import Image from 'next/image.js';
+import { a } from 'framer-motion/client';
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -25,11 +26,27 @@ const Navbar = () => {
           <Image
             src={logo}
             alt='Logo'
-            className='w-40 object-contain'
+            className='w-20 object-contain'
           />
           <p className='text-white text-[18px] font-bold'>Washington <span className='sm:block hidden' >| Moreno</span></p>
         </Link>
-        <p>asdf</p>
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
+          {
+            navLinks.map((link) => (
+              <li key={link.id}
+                className={`${active === link.title
+                    ? "text-white"
+                    : "text-secondary"
+                  }
+                  hover:text-white text-[18px] font-medium cursor-pointer
+                  `}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={`#${link.id}`}>{link.title}</a>
+              </li>
+            ))
+          }
+        </ul>
       </div>
     </nav>
   )
