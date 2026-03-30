@@ -12,7 +12,7 @@ const Computers = () => {
     <mesh>
       <hemisphereLight intensity={5} groundColor={'black'} />
       <pointLight intensity={1} />
-      <spotLight 
+      <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
@@ -32,13 +32,13 @@ const Computers = () => {
 
 const ComputersCanvas = () => {
   return (
-    <Suspense fallback={<CanvasLoader />}>
-      <Canvas
-        frameloop="demand"
-        shadows
-        camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: true }}
-      >
+    <Canvas
+      frameloop="demand"
+      shadows
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
           autoRotateSpeed={5}
@@ -47,9 +47,9 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers />
-        <Preload all />
-      </Canvas>
-    </Suspense>
+      </Suspense>
+      <Preload all />
+    </Canvas>
   )
 }
 

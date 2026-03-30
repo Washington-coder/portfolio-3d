@@ -33,7 +33,7 @@ const Hero = () => {
             I develop 3D visuals, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
-          <div className='w-full h-100 ' >
+          <div className='hidden sm:block w-full h-100' >
             <ComputersCanvas />
           </div>
         </div>
