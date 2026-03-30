@@ -1,7 +1,12 @@
+'use client';
 import { motion } from 'framer-motion'
 import { styles } from '@/constants/styles'
-import { ComputersCanvas } from './canvas'
 import herobg from '@/assets/herobg.png'
+import dynamic from 'next/dynamic'
+
+const ComputersCanvas = dynamic(() => import('@/components/canvas/Computers'), {
+  ssr: false
+})
 
 const Hero = () => {
   return (
@@ -28,7 +33,9 @@ const Hero = () => {
             I develop 3D visuals, user <br className='sm:block hidden' />
             interfaces and web applications
           </p>
-          <ComputersCanvas />
+          <div className='w-full h-100 ' >
+            <ComputersCanvas />
+          </div>
         </div>
       </div>
     </section>
