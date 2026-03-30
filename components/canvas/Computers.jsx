@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+
+import { Suspense, useEffect, useState } from "react";
 
 const Computers = () => {
   return (
