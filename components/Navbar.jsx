@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto' >
+      <div className='w-full flex justify-between items-center' >
         <Link
           href={'/'}
           className='flex items-center gap-2'
@@ -49,7 +49,7 @@ const Navbar = () => {
           }
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center relative' >
+        <div className='sm:hidden flex flex-1  items-center relative justify-end' >
           <Image
             alt='menu'
             className='w-[28px] h-[28px] object-contain cursor-pointer'
