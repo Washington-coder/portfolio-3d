@@ -11,6 +11,8 @@ import {
 } from '../components'
 
 export default function Home() {
+  const GLOBAL_PADDING = '10'
+
   return (
     <main>
       <div className='relative z-0 bg-primary'>
@@ -18,7 +20,9 @@ export default function Home() {
           <Navbar />
           <Hero />
         </div>
-        <About />
+        <div className={`p-${GLOBAL_PADDING}`} >
+          <About />
+        </div>
         <Experience />
         <Tech />
         <Works />
