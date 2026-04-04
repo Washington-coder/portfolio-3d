@@ -24,13 +24,16 @@
     "three": "^0.183.2"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.5",
+    "@rocketseat/eslint-config": "^2.2.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.27",
-    "eslint": "^9",
+    "eslint": "^9.39.4",
     "eslint-config-next": "16.2.1",
+    "eslint-plugin-react": "^7.37.5",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
     "typescript": "^5"

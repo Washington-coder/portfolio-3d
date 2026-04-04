@@ -1,17 +1,17 @@
-'use client';
+'use client'
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '@/constants/styles'
 import { services } from '@/constants'
 import { fadeIn, textVariant } from '@/utils/motion'
-import Image from 'next/image';
+import Image from 'next/image'
 import { SectionWrapper } from '../components/hoc'
 
 const ServiceCard = ({index, title, icon: Icon}) => { // Note o :Icon para renomear
   return (
     <Tilt className="xs:w-[250px] w-50">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card '
       >
         <div
@@ -32,9 +32,9 @@ const ServiceCard = ({index, title, icon: Icon}) => { // Note o :Icon para renom
               className='object-contain' 
             />
           ) : (
-             <div className="text-[64px] text-white">
-                <Icon />
-             </div>
+            <div className="text-[64px] text-white">
+              <Icon />
+            </div>
           )}
 
           <h3 className='text-white text-[20px] font-bold text-center' >{title}</h3>
@@ -53,7 +53,7 @@ const About = () => {
       </motion.div>
 
       <motion.p 
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
         I’m a passionate full-stack software engineer with <span className='font-bold text-white'>3+ years</span> of experience building scalable web applications. 
@@ -74,4 +74,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, 'about')
