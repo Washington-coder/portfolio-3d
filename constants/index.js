@@ -23,12 +23,15 @@ import {
   jobit,
   tripguide,
   threejs,
+  venturus
 } from "../assets";
 
 import { FaNodeJs } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import { FaReact } from "react-icons/fa";
 import { FaWandMagicSparkles } from "react-icons/fa6";
+
+import my_photo from '@/assets/my_photo.jpg'
 
 
 export const navLinks = [
@@ -122,55 +125,29 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer Jr.",
+    company_name: "Venturus(Itriad)",
+    icon: venturus,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2022 - 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining internal web applications using React.js, Next.js, and Node.js to improve operational management and performance.",
+      "Collaborating with cross-functional teams to build responsive, accessible UIs with Chakra UI and implementing typed data flows using TypeScript and Zod.",
+      "Optimizing code maintainability through component reuse, SOLID principles, and comprehensive unit testing with Jest and Vitest.",
+      "Participating in code reviews and contributing to Developer Experience (DX) by improving API documentation and integration tools.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full Stack Freelancer",
+    company_name: "Me (:",
+    icon: my_photo,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing custom end-to-end web solutions, including high-conversion landing pages and AI-powered applications.",
+      "Architecting an AI-driven platform for students, integrating OCR technology and the Gemini API for real-time automated feedback.",
+      "Building rapid MVP solutions using the TypeScript/Node.js stack, focusing on scalability and user-centric features.",
+      "Implementing efficient backend structures with MongoDB and Docker to ensure robust performance for growing user bases.",
     ],
   },
 ];
