@@ -49,10 +49,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
-        I’m a passionate full-stack software engineer with 3+ years of experience building scalable web applications. 
-        I specialize in TypeScript and JavaScript, with strong expertise in React, Next.js, and Node.js. 
+        I’m a passionate full-stack software engineer with <span className='font-bold text-white'>3+ years</span> of experience building scalable web applications. 
+        I specialize in <span className='font-bold text-white'>TypeScript and JavaScript</span>, with strong expertise in <span className='font-bold text-white'>React, Next.js, and Node.js</span>. 
         I have hands-on experience delivering end-to-end solutions, from crafting intuitive user interfaces to developing robust backend systems. 
-        I enjoy creating MVPs, working with AI-powered features, and collaborating to build efficient, high-quality products that solve real-world problems. 
+        I enjoy creating MVPs, working with <span className='font-bold text-white'>AI-powered features</span>, and collaborating to build efficient, high-quality products that solve real-world problems. 
         Let’s bring your ideas to life! 🚀
       </motion.p>
 
