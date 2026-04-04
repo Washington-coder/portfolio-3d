@@ -1,11 +1,11 @@
 'use client';
-import React, { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { styles } from '../constants/styles.js'
 import { navLinks } from '../constants'
-import { logo, menu, close } from '../assets'
+import { menu, close } from '../assets'
+import my_photo from '../assets/my_photo.jpg'
 import Link from 'next/link.js';
 import Image from 'next/image.js';
-import { a } from 'framer-motion/client';
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -25,9 +25,9 @@ const Navbar = () => {
           }}
         >
           <Image
-            src={logo}
-            alt='Logo'
-            className='w-20 object-contain'
+            src={my_photo}
+            alt='Profile Photo'
+            className='w-20 object-contain rounded-full'
           />
           <p className='text-white text-[18px] font-bold'>Washington <span className='sm:block hidden' >| Moreno</span></p>
         </Link>
