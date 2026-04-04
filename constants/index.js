@@ -25,6 +25,12 @@ import {
   threejs,
 } from "../assets";
 
+import { FaNodeJs } from "react-icons/fa";
+import { BiWorld } from "react-icons/bi";
+import { FaReact } from "react-icons/fa";
+import { FaWandMagicSparkles } from "react-icons/fa6";
+
+
 export const navLinks = [
   {
     id: "about",
@@ -43,19 +49,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: BiWorld,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "React Engineer",
+    icon: FaReact,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Node.js Engineer",
+    icon: FaNodeJs,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "AI Powered Workflow",
+    icon: FaWandMagicSparkles,
   },
 ];
 

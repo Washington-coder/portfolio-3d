@@ -7,8 +7,7 @@ import { fadeIn, textVariant } from '@/utils/motion'
 import Image from 'next/image';
 import { SectionWrapper } from '../components/hoc'
 
-const ServiceCard = ({index, title, icon}) => {
-  console.log(title)
+const ServiceCard = ({index, title, icon: Icon}) => { // Note o :Icon para renomear
   return (
     <Tilt className="xs:w-[250px] w-50">
       <motion.div
@@ -23,13 +22,21 @@ const ServiceCard = ({index, title, icon}) => {
           }}
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
         >
-          <Image 
-            src={icon} 
-            alt={title} 
-            width={64}      
-            height={64}
-            className='object-contain' 
-          />
+          {/* Lógica para renderizar Imagem OU Ícone */}
+          {typeof Icon === 'string' ? (
+            <Image 
+              src={Icon} 
+              alt={title} 
+              width={64}      
+              height={64}
+              className='object-contain' 
+            />
+          ) : (
+             <div className="text-[64px] text-white">
+                <Icon />
+             </div>
+          )}
+
           <h3 className='text-white text-[20px] font-bold text-center' >{title}</h3>
         </div>
       </motion.div>
