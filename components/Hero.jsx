@@ -30,8 +30,8 @@ const Hero = () => {
           <p
             className={`${styles.heroSubText} mt-2 text-white-100`}
           >
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            A Full Stack Developer from Brazil, <br className='sm:block hidden' />
+            building stunning web applications with ❤️.
           </p>
           <div className='sm:block w-full h-100' >
             <ComputersCanvas />
