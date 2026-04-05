@@ -22,8 +22,8 @@ const Tech = () => {
         {technologies.map((technology) => {
           return(
             <div key={technology.name} className="flex flex-col items-center gap-2 cursor-grab">
-              <div className="w-28 h-28" key={technology.name} >
-                <BallCanvas icon={technology.icon.src} />
+              <div className="w-28 h-28" >
+                <BallCanvas icon={technology.icon} />
               </div>
               <p className="text-white text-sm font-medium">{technology.name}</p>
             </div>

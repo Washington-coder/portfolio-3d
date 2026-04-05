@@ -1,29 +1,22 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
-  venturus
+  venturus,
+  postgresql,
+  nestjs
 } from '../assets'
 
 import { FaNodeJs } from 'react-icons/fa'
@@ -90,10 +83,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
@@ -106,16 +95,20 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: 'PostgreSQL',
+    icon: postgresql,
+  },
+  {
+    name: 'Nest.js',
+    icon: nestjs,
+  },
+  {
     name: 'Three JS',
     icon: threejs,
   },
   {
     name: 'git',
     icon: git,
-  },
-  {
-    name: 'figma',
-    icon: figma,
   },
   {
     name: 'docker',
