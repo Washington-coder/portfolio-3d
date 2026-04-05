@@ -29,9 +29,9 @@ import starbucks from './company/starbucks.png'
 import venturus from './company/venturus.png'
 import tesla from './company/tesla.png'
 
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import tripguide from './tripguide.png'
+import ignite from './ignite_timer.png'
+import portal from './portal.png'
+import smart_redacoes from './smart_redacoes.png'
 
 export {
   logo,
@@ -59,10 +59,10 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   venturus,
   postgresql,
-  nestjs
+  nestjs,
+  ignite,
+  portal,
+  smart_redacoes,
 }

@@ -8,15 +8,14 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   venturus,
   postgresql,
-  nestjs
+  nestjs,
+  smart_redacoes,
+  portal,
+  ignite,
 } from '../assets'
 
 import { FaNodeJs } from 'react-icons/fa'
@@ -174,13 +173,21 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Smart Redações',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    'AI-driven platform designed for students to digitize handwritten essays using OCR and receive real-time pedagogical feedback and scoring via Gemini API integration.',
     tags: [
       {
-        name: 'react',
+        name: 'nextjs',
         color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'gemini-api',
+        color: 'pink-text-gradient',
       },
       {
         name: 'mongodb',
@@ -191,50 +198,66 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: smart_redacoes,
+    website_link: 'https://spa-escreve-ai-next.vercel.app/',
   },
   {
-    name: 'Job IT',
+    name: 'Developer Portal',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    'A public-facing enterprise platform offering documentation, SDKs, and integration tools for developers, focusing on high-quality API references and seamless onboarding workflows.',
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'swagger',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'vitest',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'rest-api',
+        color: 'green-text-gradient',
+      },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: portal,
+    website_link: 'https://developer.gertec.com.br/',
+  },
+  {
+    name: 'Ignite Timer',
+    description:
+    'A modern task management and pomodoro application featuring cycle history, real-time countdown tracking, and persistent state management using advanced React patterns.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'styled-components',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'hook-form-zod',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'reducers-context',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: ignite,
+    website_link: 'https://washington-coder.github.io/ignite-timer',
   },
 ]
 
