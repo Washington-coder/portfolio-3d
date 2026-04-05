@@ -16,6 +16,8 @@ import {
   smart_redacoes,
   portal,
   ignite,
+  bruno,
+  luiz,
 } from '../assets'
 
 import { FaNodeJs } from 'react-icons/fa'
@@ -147,28 +149,23 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
+      'I had the pleasure of working with Washington, and I can say he is an exceptional professional. As a developer, he demonstrated an insatiable thirst for knowledge and a remarkable ability to learn quickly.',
+    name: 'Bruno Batalha',
+    designation: 'Full Stack Dev',
+    company: 'Venturus',
+    image: bruno,
+    linkedin_link: 'https://www.linkedin.com/in/bruno-batalha-/'
   },
   {
     testimonial:
-      'I\'ve never met a web developer who truly cares about their clients\' success like Rick does.',
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
+      'It is with great pleasure that I recommend Washington, with whom I had the pleasure of working on a project. He stood out for his strong technical skills and his dedication to creating intuitive, functional interfaces, always with an exceptional eye for front-end detail.',
+    name: 'Luiz Fernando',
+    designation: 'Back-end Dev',
+    company: 'Venturus',
+    image: luiz,
+    linkedin_link: 'https://www.linkedin.com/in/luiz-fernando-pinage-coutinho/'
   },
-  {
-    testimonial:
-      'After Rick optimized our website, our traffic increased by 50%. We can\'t thank them enough!',
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
+  
 ]
 
 const projects = [

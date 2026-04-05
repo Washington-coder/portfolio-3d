@@ -6,7 +6,7 @@ import { fadeIn, textVariant } from '@/utils/motion'
 import { testimonials } from '@/constants'
 import Image from 'next/image'
 
-const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => {
+const FeedbackCard = ({ index, testimonial, name, designation, company, image, linkedin_link }) => {
   return(
     <motion.div
       variants={fadeIn('', 'spring', index * 0.5, 0.75)}
@@ -21,7 +21,11 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
             <p className="text-white font-medium text-[16px]" >
               <span
                 className="blue-text-gradient"
-              >@</span> {name}
+              >@</span> 
+              {' '}
+              <a href={linkedin_link} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                {name}
+              </a>
             </p>
             <p className="mt-1 text-secondary text-[12px]" >
               {designation} of {company}

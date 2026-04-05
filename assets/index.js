@@ -33,6 +33,9 @@ import ignite from './ignite_timer.png'
 import portal from './portal.png'
 import smart_redacoes from './smart_redacoes.png'
 
+import luiz from './luiz.jpg'
+import bruno from './bruno.jpg'
+
 export {
   logo,
   backend,
@@ -65,4 +68,6 @@ export {
   ignite,
   portal,
   smart_redacoes,
+  luiz,
+  bruno,
 }
