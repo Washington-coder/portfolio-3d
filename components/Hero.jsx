@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { styles } from '@/constants/styles'
 import herobg from '@/assets/herobg.png'
 import dynamic from 'next/dynamic'
@@ -14,7 +14,7 @@ const Hero = () => {
       className='relative w-full h-screen bg-no-repeat bg-center'
     >
       <div
-        className={`absolute inset-0 top-[120px] flex flex-row items-start gap-5`}
+        className={'absolute inset-0 top-[120px] flex flex-row items-start gap-5'}
       >
         <div className='flex flex-col justify-center items-center mt-5 ml-10' >
           <div className='w-5 h-5 rounded-full bg-[#915eff]' />

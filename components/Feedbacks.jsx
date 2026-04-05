@@ -1,18 +1,18 @@
-'use client';
-import { motion } from "framer-motion"
-import { styles } from "@/constants/styles"
-import { SectionWrapper } from "./hoc"
-import { fadeIn, textVariant } from "@/utils/motion"
-import { testimonials } from "@/constants"
-import Image from "next/image";
+'use client'
+import { motion } from 'framer-motion'
+import { styles } from '@/constants/styles'
+import { SectionWrapper } from './hoc'
+import { fadeIn, textVariant } from '@/utils/motion'
+import { testimonials } from '@/constants'
+import Image from 'next/image'
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => {
   return(
     <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      variants={fadeIn('', 'spring', index * 0.5, 0.75)}
       className="bg-black-200 p-10 rounded-3xl w-[320px] h-fit"
     >
-      <p className="text-white font-black text-[48px]">{`"`}</p>
+      <p className="text-white font-black text-[48px]">{'"'}</p>
 
       <div className="mt-1" >
         <p className="text-white tracking-wider text-[18px] " >{testimonial}</p>
@@ -67,4 +67,4 @@ const Feedbacks = () => {
   )
 }
 
-export default SectionWrapper(Feedbacks, "")
+export default SectionWrapper(Feedbacks, '')

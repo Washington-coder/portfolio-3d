@@ -1,4 +1,4 @@
-'use client';
+'use client'
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import { color, motion } from 'framer-motion'
@@ -7,7 +7,7 @@ import { styles } from '@/constants/styles'
 import { experiences } from '@/constants'
 import { SectionWrapper } from './hoc'
 import { textVariant } from '@/utils/motion'
-import Image from 'next/image';
+import Image from 'next/image'
 
 const ExperienceCard = ({experience}) => {
   return (

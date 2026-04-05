@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import { motion } from "framer-motion"
-import { useState, useRef } from "react"
-import emailjs from "@emailjs/browser"
+import { motion } from 'framer-motion'
+import { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
-import { styles } from "@/constants/styles";
-import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "./hoc";
-import { slideIn } from "@/utils/motion";
+import { styles } from '@/constants/styles'
+import { EarthCanvas } from './canvas'
+import { SectionWrapper } from './hoc'
+import { slideIn } from '@/utils/motion'
 
 const Contact = () => {
   const formRef = useRef()
@@ -39,20 +39,20 @@ const Contact = () => {
       },
       'mLXZkhKtJmNMNSi5L'
     )
-    .then(() => {
-      setIsLoading(false)
-      alert('Thank you ! I will get back to you as soon as possible.')
+      .then(() => {
+        setIsLoading(false)
+        alert('Thank you ! I will get back to you as soon as possible.')
 
-      setForm({
-        name: '',
-        email: '',
-        message: ''
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      }, (error) => {
+        setIsLoading(false)
+        console.log(error)
+        alert('Something went wrong ):')
       })
-    }, (error) => {
-      setIsLoading(false)
-      console.log(error)
-      alert('Something went wrong ):')
-    })
   }
 
 
@@ -123,4 +123,4 @@ const Contact = () => {
   )
 }
 
-export default SectionWrapper(Contact, "contact")
+export default SectionWrapper(Contact, 'contact')

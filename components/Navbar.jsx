@@ -1,11 +1,11 @@
-'use client';
+'use client'
 import { useState } from 'react'
 import { styles } from '../constants/styles.js'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
 import my_photo from '../assets/my_photo.jpg'
-import Link from 'next/link.js';
-import Image from 'next/image.js';
+import Link from 'next/link.js'
+import Image from 'next/image.js'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -36,9 +36,9 @@ const Navbar = () => {
             navLinks.map((link) => (
               <li key={link.id}
                 className={`${active === link.title
-                  ? "text-white"
-                  : "text-secondary"
-                  }
+                  ? 'text-white'
+                  : 'text-secondary'
+                }
                   hover:text-white text-[18px] font-medium cursor-pointer
                   `}
                 onClick={() => setActive(link.title)}
@@ -57,16 +57,16 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
           <div
-            className={`${!toggle ? "hidden" : "flex"} flex-col gap-4 p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${!toggle ? 'hidden' : 'flex'} flex-col gap-4 p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className='flex items-start flex-col gap-4'>
               {
                 navLinks.map((link) => (
                   <li key={link.id}
                     className={`${active === link.title
-                      ? "text-white"
-                      : "text-secondary"
-                      }
+                      ? 'text-white'
+                      : 'text-secondary'
+                    }
                     font-poppins font-medium cursor-pointer text-[16px]
                   `}
                     onClick={() => {

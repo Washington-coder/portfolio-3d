@@ -11,6 +11,8 @@ const eslintConfig = defineConfig([
     },
     files: ['**/*.{js,jsx,ts,tsx}'],
     rules: {
+      "react/prop-types": "off",
+      "react/no-unknown-property": ["error", { "ignore": ["options"] }],
       'react/react-in-jsx-scope': 'off', 
       'react/jsx-uses-react': 'off',     
       'indent': ['error', 2],    

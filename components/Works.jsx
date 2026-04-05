@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import { Tilt } from "react-tilt"
-import { motion } from "framer-motion"
-import { styles } from "@/constants/styles"
-import { github } from "@/assets"
-import { SectionWrapper } from "./hoc"
-import { projects } from "@/constants"
-import { fadeIn, textVariant } from "@/utils/motion"
-import Image from "next/image";
+import { Tilt } from 'react-tilt'
+import { motion } from 'framer-motion'
+import { styles } from '@/constants/styles'
+import { github } from '@/assets'
+import { SectionWrapper } from './hoc'
+import { projects } from '@/constants'
+import { fadeIn, textVariant } from '@/utils/motion'
+import Image from 'next/image'
 
 const ProjectCard = ({
   index,
@@ -18,7 +18,7 @@ const ProjectCard = ({
   source_code_link
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} >
+    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)} >
       <Tilt
         options={{
           max: 45,
@@ -36,7 +36,7 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover" >
             <div 
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(source_code_link, '_blank')}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <Image
@@ -53,15 +53,15 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]" >{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2" >
-            {
-              tags.map((tag) => {
-                return(
-                  <p key={tag.name} className={`text-[14px] ${tag.color}`} >
-                    #{tag.name}
-                  </p>
-                )
-              })
-            }
+          {
+            tags.map((tag) => {
+              return(
+                <p key={tag.name} className={`text-[14px] ${tag.color}`} >
+                  #{tag.name}
+                </p>
+              )
+            })
+          }
         </div>
       </Tilt>
     </motion.div>
@@ -82,7 +82,7 @@ const Works = () => {
 
       <div className="w-full flex" >
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -109,4 +109,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, '')
