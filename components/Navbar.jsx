@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-brand-primary`}
     >
       <div className='w-full flex justify-between items-center' >
         <Link
@@ -37,7 +37,7 @@ const Navbar = () => {
               <li key={link.id}
                 className={`${active === link.title
                   ? 'text-white'
-                  : 'text-secondary'
+                  : 'text-brand-secondary'
                 }
                   hover:text-white text-[18px] font-medium cursor-pointer
                   `}
@@ -65,7 +65,7 @@ const Navbar = () => {
                   <li key={link.id}
                     className={`${active === link.title
                       ? 'text-white'
-                      : 'text-secondary'
+                      : 'text-brand-secondary'
                     }
                     font-poppins font-medium cursor-pointer text-[16px]
                   `}

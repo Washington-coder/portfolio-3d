@@ -16,12 +16,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary: #050816;
-  --color-secondary: #aaa6c3;
-  --color-tertiary: #151030;
-  --color-black-100: #100d25;
-  --color-black-200: #090325;
-  --color-white-100: #f3f3f3;
+  --color-brand-primary: #050816;
+  --color-brand-secondary: #aaa6c3;
+  --color-brand-tertiary: #151030;
+  --color-brand-black-100: #100d25;
+  --color-brand-black-200: #090325;
+  --color-brand-white-100: #f3f3f3;
 }
 
 .hash-span {
@@ -350,5 +350,26 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .bg-brand-primary {
+    background-color: #050816 !important;
+  }
+  .text-brand-secondary {
+    color: #aaa6c3 !important;
+  }
+  .bg-brand-tertiary {
+    background-color: #151030 !important;
+  }
+  .bg-brand-black-100 {
+    background-color: #100d25 !important;
+  }
+  .bg-brand-black-200 {
+    background-color: #090325 !important;
+  }
+  .text-brand-white-100 {
+    color: #f3f3f3 !important;
   }
 }

@@ -20,7 +20,7 @@ const ServiceCard = ({index, title, icon: Icon}) => { // Note o :Icon para renom
             scale: 1,
             speed: 450
           }}
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+          className='bg-brand-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
         >
           {/* Lógica para renderizar Imagem OU Ícone */}
           {typeof Icon === 'string' ? (
@@ -54,7 +54,7 @@ const About = () => {
 
       <motion.p 
         variants={fadeIn('', '', 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
+        className='mt-4 text-brand-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
         I’m a passionate full-stack software engineer with <span className='font-bold text-white'>3+ years</span> of experience building scalable web applications. 
         I specialize in <span className='font-bold text-white'>TypeScript and JavaScript</span>, with strong expertise in <span className='font-bold text-white'>React, Next.js, and Node.js</span>. 
