@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { styles } from '../constants/styles.js'
-import { navLinks } from '../constants'
+import { navLinks, getNavLinks } from '../constants'
 import { menu, close } from '../assets'
 import my_photo from '../assets/my_photo.jpg'
 import brazil_flag from '../assets/brazil_flag.png'
@@ -9,6 +9,7 @@ import usa_flag from '../assets/usa_flag.png'
 import Link from 'next/link.js'
 import Image from 'next/image.js'
 import { AiFillAliwangwang } from 'react-icons/ai'
+import { useLanguage } from '../context/LanguageContext'
 
 import {
   Select,
@@ -22,6 +23,18 @@ import {
 const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
+
+  const { dict } = useLanguage()
+
+  const { locale, changeLocale } = useLanguage()
+
+  const selectValue = locale === 'en' ? 'en-us' : 'pt-br'
+
+  function handleChange(value) {
+    changeLocale(value === 'en-us' ? 'en' : 'pt')
+  }
+
+  const navLinks = getNavLinks(dict)
 
   return (
     <nav
@@ -62,7 +75,7 @@ const Navbar = () => {
             }
           </ul>
 
-          <Select defaultValue='pt-br' >
+          <Select value={selectValue} onValueChange={handleChange} defaultValue='pt-br' >
             <SelectTrigger className="w-[150px] text-white border-2 border-brand-secondary rounded-md">
               <SelectValue placeholder="Theme" />
             </SelectTrigger>

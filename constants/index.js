@@ -28,19 +28,10 @@ import { FaWandMagicSparkles } from 'react-icons/fa6'
 import my_photo from '@/assets/my_photo.jpg'
 
 
-export const navLinks = [
-  {
-    id: 'about',
-    title: 'About',
-  },
-  {
-    id: 'work',
-    title: 'Work',
-  },
-  {
-    id: 'contact',
-    title: 'Contact',
-  },
+const getNavLinks = (dict) => [
+  { id: 'about', title: dict.nav.about },
+  { id: 'work', title: dict.nav.work },
+  { id: 'contact', title: dict.nav.contact },
 ]
 
 const services = [
@@ -258,4 +249,4 @@ const projects = [
   },
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, technologies, experiences, testimonials, projects, getNavLinks}

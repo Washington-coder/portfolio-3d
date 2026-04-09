@@ -7,7 +7,12 @@ import { fadeIn, textVariant } from '@/utils/motion'
 import Image from 'next/image'
 import { SectionWrapper } from '../components/hoc'
 
+import { useLanguage } from '../context/LanguageContext'
+
+
+
 const ServiceCard = ({index, title, icon: Icon}) => { // Note o :Icon para renomear
+
   return (
     <Tilt className="xs:w-[250px] w-50">
       <motion.div
@@ -45,10 +50,12 @@ const ServiceCard = ({index, title, icon: Icon}) => { // Note o :Icon para renom
 }
 
 const About = () => {
+  const { dict } = useLanguage()
+
   return (
     <>
       <motion.div variants={textVariant()} >
-        <p className={styles.sectionSubText} >Introduction</p>
+        <p className={styles.sectionSubText}>Introduction</p>
         <h1 className={styles.sectionHeadText} >Overview.</h1>
       </motion.div>
 
