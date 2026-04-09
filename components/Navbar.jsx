@@ -4,8 +4,20 @@ import { styles } from '../constants/styles.js'
 import { navLinks } from '../constants'
 import { menu, close } from '../assets'
 import my_photo from '../assets/my_photo.jpg'
+import brazil_flag from '../assets/brazil_flag.png'
+import usa_flag from '../assets/usa_flag.png'
 import Link from 'next/link.js'
 import Image from 'next/image.js'
+import { AiFillAliwangwang } from 'react-icons/ai'
+
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from './ui/select.tsx'
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -31,23 +43,51 @@ const Navbar = () => {
           />
           <p className='text-white text-[18px] font-bold'>Washington <span className='sm:block hidden' >| Moreno</span></p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {
-            navLinks.map((link) => (
-              <li key={link.id}
-                className={`${active === link.title
-                  ? 'text-white'
-                  : 'text-brand-secondary'
-                }
+        <div className='flex gap-4' >
+          <ul className='list-none hidden sm:flex flex-row gap-10'>
+            {
+              navLinks.map((link) => (
+                <li key={link.id}
+                  className={`${active === link.title
+                    ? 'text-white'
+                    : 'text-brand-secondary'
+                  }
                   hover:text-white text-[18px] font-medium cursor-pointer
                   `}
-                onClick={() => setActive(link.title)}
-              >
-                <a href={`#${link.id}`}>{link.title}</a>
-              </li>
-            ))
-          }
-        </ul>
+                  onClick={() => setActive(link.title)}
+                >
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))
+            }
+          </ul>
+
+          <Select defaultValue='pt-br' >
+            <SelectTrigger className="w-[150px] text-white border-2 border-brand-secondary rounded-md">
+              <SelectValue placeholder="Theme" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="pt-br">
+                  <Image
+                    src={brazil_flag}
+                    alt='Brazil Flag'
+                    className='w-7 object-contain'
+                  />
+                  PT-BR
+                </SelectItem>
+                <SelectItem value="en-us">
+                  <Image
+                    src={usa_flag}
+                    alt='USA Flag'
+                    className='w-7 object-contain'
+                  />
+                  EN-US
+                </SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
 
         <div className='sm:hidden flex flex-1  items-center relative justify-end' >
           <Image
